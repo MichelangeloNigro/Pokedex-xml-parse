@@ -16,7 +16,8 @@ public class ScriptablePokemon : ScriptableObject {
 	public int SPD;
 	public int SAT;
 	public int SDF;
-	public ScriptablePokemon[] evolutions;
+	public List<ScriptablePokemon> evolutions=new List<ScriptablePokemon>();
+	public List<int> evolutionsID=new List<int>();
 
 }
 
