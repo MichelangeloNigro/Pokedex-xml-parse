@@ -2,9 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using UnityEngine;
 using System.Xml;
+using Sirenix.OdinInspector;
 using UnityEditor;
+using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -14,18 +15,22 @@ public class XmlFix : MonoBehaviour {
 	public Action<ScriptablePokemon> pokemonCreated;
 	public Action xmlFixed;
 	public Action endedCreation;
+	public Action OdinButton;
+	public Pokedex pokedex;
 	public Slider slider;
 	[FormerlySerializedAs("SavePath")] public List<string> savePath = new List<string>();
 	public Sprite[] sprites;
 	public string[] toBeDeleted;
+	[Title("Progress Bar")]
 	public int PercentageTreshold;
+	private int maxint;
 
 	IEnumerator Start() {
 		yield return new WaitForSeconds(0.1f);
 		sprites = Resources.LoadAll<Sprite>("pokedex");
 		LoadPokedata();
 		FixData();
-		StartCoroutine(CreateScriptable());
+		CreateScriptable();
 	}
 
 	private void FixData() {
@@ -54,14 +59,16 @@ public class XmlFix : MonoBehaviour {
 		}
 	}
 
-	IEnumerator CreateScriptable() {
+	public Color GetColor(float value) {
+		return Color.Lerp(Color.red, Color.green,Mathf.Pow(value / 100, 2));
+	}
+	private void CreateScriptable() {
 		XmlNodeList list = pokedexFix.SelectNodes(("//pokemon"));
 		foreach (XmlNode entry in list) {
-			if ((int.Parse(entry.SelectSingleNode("@id").InnerText)) % ((pokedexOriginal.SelectNodes("//pokemon").Count * PercentageTreshold / 100)) == 0) {
-				Debug.Log("Stop");
-				slider.value = float.Parse(entry.SelectSingleNode("@id").InnerText) / pokedexOriginal.SelectNodes("//pokemon").Count;
-				yield return null;
-			}
+			// if ((int.Parse(entry.SelectSingleNode("@id").InnerText)) % ((pokedexOriginal.SelectNodes("//pokemon").Count * PercentageTreshold / 100)) == 0) {
+			// 	slider.value = float.Parse(entry.SelectSingleNode("@id").InnerText) / pokedexOriginal.SelectNodes("//pokemon").Count;
+			// 	yield return null;
+			// }
 			ScriptablePokemon temp = ScriptableObject.CreateInstance<ScriptablePokemon>();
 			temp.name = entry.SelectSingleNode("name").InnerText;
 			temp.id = int.Parse(entry.SelectSingleNode("@id").InnerText);
@@ -81,6 +88,8 @@ public class XmlFix : MonoBehaviour {
 			AssetDatabase.SaveAssets();
 			AssetDatabase.Refresh();
 			pokemonCreated(temp);
+			bar++;
+			//non ne ho idea
 			foreach (XmlNode variable in entry.SelectNodes("evolutions/evolution/@id")) {
 				temp.evolutionsID.Add(int.Parse(variable.InnerText));
 			}
@@ -92,4 +101,53 @@ public class XmlFix : MonoBehaviour {
 	private void OnApplicationQuit() {
 		AssetDatabase.DeleteAssets(savePath.ToArray(), savePath);
 	}
+
+	private void WithButton() {
+		OdinButton += () => {
+			sprites = Resources.LoadAll<Sprite>("pokedex");
+			LoadPokedata();
+			setValuseForInspector();
+			FixData();
+			CreateScriptable();
+		};
+	}
+
+	[Title("OdinProve")]
+	[Button("Create Pokemons")]
+	private void createPokemons() {
+		Debug.Log("Start");
+		pokedex.ButtonCreation();
+		WithButton();
+		OdinButton();
+	}
+	[ReadOnly]
+	[ProgressBar(0, "$maxint", ColorMember = "GetColor",Height = 40)]
+	public int bar;
+
+	[Button("set max index")]
+	private void MaxIndex() {
+		pokedexOriginal.Load(Application.dataPath + "/Xml/pokedata.xml");
+		maxint = pokedexOriginal.SelectNodes("//pokemon").Count;
+	}
+
+	[Button("Reset")]
+	private void res() {
+		AssetDatabase.DeleteAssets(savePath.ToArray(), savePath);
+		bar = 0;
+		maxint = 0;
+		pokedex.pokemonss = null;
+		savePath = null;
+		slider.value = 0;
+	}
+
+	public void setValuseForInspector() {
+		MaxIndex();
+		XmlNodeList list = pokedexFix.SelectNodes(("//pokemon"));
+		foreach (XmlNode node in list ) {
+			if (int.Parse(node.SelectSingleNode("stats/HP").InnerText)>ScriptablePokemon.MaxHP) {
+				ScriptablePokemon.MaxHP = int.Parse(node.SelectSingleNode("stats/HP").InnerText);
+			}
+		}
+	}
+	
 }

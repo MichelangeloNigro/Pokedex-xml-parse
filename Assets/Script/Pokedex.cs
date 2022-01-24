@@ -29,4 +29,19 @@ public class Pokedex : MonoBehaviour {
 			}
 		}
 	}
+
+  public void  ButtonCreation() {
+		fix.OdinButton += () => {
+			fix.xmlFixed = () => {
+				pokedexOriginal.Load(Application.dataPath + "/Xml/pokedata.xml");
+				pokemonss = new ScriptablePokemon[pokedexOriginal.SelectNodes("//pokemon").Count];
+				for (int i = 0; i < pokemonss.Length; i++) {
+					pokemonss[i] = ScriptableObject.CreateInstance<ScriptablePokemon>();
+				}
+			};
+			fix.pokemonCreated += RegisterPokemon;
+			fix.endedCreation+=assignEvolution;
+			
+		};
+	}
 }
