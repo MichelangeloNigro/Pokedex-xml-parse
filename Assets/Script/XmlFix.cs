@@ -8,6 +8,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class XmlFix : MonoBehaviour {
 	private XmlDocument pokedexOriginal = new XmlDocument();
@@ -15,16 +16,26 @@ public class XmlFix : MonoBehaviour {
 	public Action<ScriptablePokemon> pokemonCreated;
 	public Action xmlFixed;
 	public Action endedCreation;
-	public Action OdinButton;
+	public Action odinButton;
 	public Pokedex pokedex;
+	private bool arePokemonCreated;
 	public Slider slider;
 	[FormerlySerializedAs("SavePath")] public List<string> savePath = new List<string>();
 	public Sprite[] sprites;
 	public string[] toBeDeleted;
-	[Title("Progress Bar")]
-	public int PercentageTreshold;
+	[FormerlySerializedAs("PercentageTreshold")] [Title("Progress Bar")] public int percentageTreshold;
 	private int maxint;
-
+	[Space] 
+	public TMPro.TMP_Text name;
+	public TMPro.TMP_Text hp;
+	public TMPro.TMP_Text att;
+	public TMPro.TMP_Text def;
+	public TMPro.TMP_Text sat;
+	[FormerlySerializedAs("spf")] public TMPro.TMP_Text SDF;
+	public TMPro.TMP_Text spd;
+	public TMPro.TMP_Text type;
+	public Image sprite;
+	
 	IEnumerator Start() {
 		yield return new WaitForSeconds(0.1f);
 		sprites = Resources.LoadAll<Sprite>("pokedex");
@@ -60,8 +71,9 @@ public class XmlFix : MonoBehaviour {
 	}
 
 	public Color GetColor(float value) {
-		return Color.Lerp(Color.red, Color.green,Mathf.Pow(value / 100, 2));
+		return Color.Lerp(Color.red, Color.green, Mathf.Pow(value / 100, 2));
 	}
+
 	private void CreateScriptable() {
 		XmlNodeList list = pokedexFix.SelectNodes(("//pokemon"));
 		foreach (XmlNode entry in list) {
@@ -95,6 +107,7 @@ public class XmlFix : MonoBehaviour {
 			}
 		}
 		endedCreation();
+		arePokemonCreated = true;
 		slider.value = 1;
 	}
 
@@ -103,25 +116,26 @@ public class XmlFix : MonoBehaviour {
 	}
 
 	private void WithButton() {
-		OdinButton += () => {
+		odinButton += () => {
 			sprites = Resources.LoadAll<Sprite>("pokedex");
 			LoadPokedata();
 			setValuseForInspector();
 			FixData();
 			CreateScriptable();
+			SetPokemonsBasedOnStat();
 		};
 	}
 
 	[Title("OdinProve")]
 	[Button("Create Pokemons")]
-	private void createPokemons() {
+	private void CreatePokemons() {
 		Debug.Log("Start");
 		pokedex.ButtonCreation();
 		WithButton();
-		OdinButton();
+		odinButton();
 	}
-	[ReadOnly]
-	[ProgressBar(0, "$maxint", ColorMember = "GetColor",Height = 40)]
+
+	[ReadOnly] [ProgressBar(0, "$maxint", ColorMember = "GetColor", Height = 40)]
 	public int bar;
 
 	[Button("set max index")]
@@ -129,25 +143,134 @@ public class XmlFix : MonoBehaviour {
 		pokedexOriginal.Load(Application.dataPath + "/Xml/pokedata.xml");
 		maxint = pokedexOriginal.SelectNodes("//pokemon").Count;
 	}
-
+	
 	[Button("Reset")]
-	private void res() {
+	private void Res() {
 		AssetDatabase.DeleteAssets(savePath.ToArray(), savePath);
 		bar = 0;
 		maxint = 0;
+		pokedex.highestHP = null;
+		pokedex.highestATK = null;
+		pokedex.highestDEF = null;
+		pokedex.highestSAT = null;
+		pokedex.highestSDF = null;
+		pokedex.highestSPD = null;
 		pokedex.pokemonss = null;
 		savePath = null;
 		slider.value = 0;
+		pokedex.highestHP = null;
+		arePokemonCreated = false;
+		name.text = "";
+		sprite.sprite = null;
+		type.text = "";
+		hp.text = "HP:";
+		att.text = "ATK:";
+		def.text = "DEF:";
+		sat.text = "SAT:";
+		SDF.text = "SDF:";
+		spd.text = "SPD:";
 	}
+	public void StampPokemon(ScriptablePokemon pokemon) {
+		
+		name.text = $"#{pokemon.id.ToString("000")}  {pokemon.name}";
+		sprite.sprite = pokemon.sprite;
+		type.text = "";
+		hp.text = "HP:";
+		att.text = "ATK:";
+		def.text = "DEF:";
+		sat.text = "SAT:";
+		SDF.text = "SDF:";
+		spd.text = "SPD:";
+		foreach (var tipo in pokemon.types) {
+			type.text += $" {tipo} ";
+		}
+		hp.text +=$" {pokemon.Hp}";
+		att.text +=$" {pokemon.ATK}";
+		def.text +=$" {pokemon.DEF}";
+		sat.text +=$" {pokemon.SAT}";
+		SDF.text +=$" {pokemon.SDF}";
+		spd.text +=$" {pokemon.SPD}";
+	}
+
+	[Title("Pokemon Creation")]
+	[Button("Random Pokemon"), ShowIf("arePokemonCreated")]
+	public void stampRandomPokemon() {
+		int temp = Random.Range(0, pokedex.pokemonss.Length);
+		StampPokemon(pokedex.pokemonss[temp]);
+	}
+	[Button("Highest HP"),ShowIf("arePokemonCreated")]
+	public void stampHighestHPPokemon() {
+		StampPokemon(pokedex.highestHP);
+	}
+	[Button("Highest ATK"),ShowIf("arePokemonCreated")]
+	public void stampHighestATKPokemon() {
+		StampPokemon(pokedex.highestATK);
+	}
+	[Button("Highest DEF"),ShowIf("arePokemonCreated")]
+	public void stampHighestDEFPokemon() {
+		StampPokemon(pokedex.highestDEF);
+	}
+	[Button("Highest SAT"),ShowIf("arePokemonCreated")]
+	public void stampHighestSATPokemon() {
+		StampPokemon(pokedex.highestSAT);
+	}
+	[Button("Highest SDF"),ShowIf("arePokemonCreated")]
+	public void stampHighestSDFPokemon() {
+		StampPokemon(pokedex.highestSDF);
+	}
+	[Button("Highest SPD"),ShowIf("arePokemonCreated")]
+	public void stampHighestSPDPokemon() {
+		StampPokemon(pokedex.highestSPD);
+	}
+	[Button("Best Pokemon"),ShowIf("arePokemonCreated")]
+	public void StampBestPokemon() {
+		StampPokemon(pokedex.highestStats);
+	}
+
 
 	public void setValuseForInspector() {
 		MaxIndex();
 		XmlNodeList list = pokedexFix.SelectNodes(("//pokemon"));
-		foreach (XmlNode node in list ) {
-			if (int.Parse(node.SelectSingleNode("stats/HP").InnerText)>ScriptablePokemon.MaxHP) {
+		foreach (XmlNode node in list) {
+			if (int.Parse(node.SelectSingleNode("stats/HP").InnerText) > ScriptablePokemon.MaxHP) {
 				ScriptablePokemon.MaxHP = int.Parse(node.SelectSingleNode("stats/HP").InnerText);
+				ScriptablePokemon.MaxHPId = int.Parse(node.SelectSingleNode("@id").InnerText);
+			}
+			if (int.Parse(node.SelectSingleNode("stats/ATK").InnerText) > ScriptablePokemon.MaxATK) {
+				ScriptablePokemon.MaxATK = int.Parse(node.SelectSingleNode("stats/ATK").InnerText);
+				ScriptablePokemon.MaxATKId = int.Parse(node.SelectSingleNode("@id").InnerText);
+			}
+			if (int.Parse(node.SelectSingleNode("stats/DEF").InnerText) > ScriptablePokemon.MaxDEF) {
+				ScriptablePokemon.MaxDEF = int.Parse(node.SelectSingleNode("stats/DEF").InnerText);
+				ScriptablePokemon.MaxDEFId = int.Parse(node.SelectSingleNode("@id").InnerText);
+			}
+			if (int.Parse(node.SelectSingleNode("stats/SAT").InnerText) > ScriptablePokemon.MaxSAT) {
+				ScriptablePokemon.MaxSAT = int.Parse(node.SelectSingleNode("stats/SAT").InnerText);
+				ScriptablePokemon.MaxSATId = int.Parse(node.SelectSingleNode("@id").InnerText);
+			}
+			if (int.Parse(node.SelectSingleNode("stats/SDF").InnerText) > ScriptablePokemon.MaxSDF) {
+				ScriptablePokemon.MaxSDF = int.Parse(node.SelectSingleNode("stats/SDF").InnerText);
+				ScriptablePokemon.MaxSDFId = int.Parse(node.SelectSingleNode("@id").InnerText);
+			}
+			if (int.Parse(node.SelectSingleNode("stats/SPD").InnerText) > ScriptablePokemon.MaxSPD) {
+				ScriptablePokemon.MaxSPD = int.Parse(node.SelectSingleNode("stats/SPD").InnerText);
+				ScriptablePokemon.MaxSPDId = int.Parse(node.SelectSingleNode("@id").InnerText);
+			}
+			if ((int.Parse(node.SelectSingleNode("stats/SPD").InnerText)+int.Parse(node.SelectSingleNode("stats/SDF").InnerText)+int.Parse(node.SelectSingleNode("stats/SAT").InnerText)+int.Parse(node.SelectSingleNode("stats/DEF").InnerText)+int.Parse(node.SelectSingleNode("stats/ATK").InnerText)+int.Parse(node.SelectSingleNode("stats/HP").InnerText) > ScriptablePokemon.BestPokemon)) {
+				ScriptablePokemon.BestPokemon = (int.Parse(node.SelectSingleNode("stats/SPD").InnerText)+int.Parse(node.SelectSingleNode("stats/SDF").InnerText)+int.Parse(node.SelectSingleNode("stats/SAT").InnerText)+int.Parse(node.SelectSingleNode("stats/DEF").InnerText)+int.Parse(node.SelectSingleNode("stats/ATK").InnerText)+int.Parse(node.SelectSingleNode("stats/HP").InnerText));
+				ScriptablePokemon.BestPokemonID = int.Parse(node.SelectSingleNode("@id").InnerText);
 			}
 		}
 	}
-	
+
+	public void SetPokemonsBasedOnStat() {
+		pokedex.highestHP = pokedex.pokemonss[ScriptablePokemon.MaxHPId-1];
+		pokedex.highestATK = pokedex.pokemonss[ScriptablePokemon.MaxATKId-1];
+		pokedex.highestDEF = pokedex.pokemonss[ScriptablePokemon.MaxDEFId-1];
+		pokedex.highestSAT = pokedex.pokemonss[ScriptablePokemon.MaxSATId-1];
+		pokedex.highestSDF = pokedex.pokemonss[ScriptablePokemon.MaxSDFId-1];
+		pokedex.highestSPD = pokedex.pokemonss[ScriptablePokemon.MaxSPDId-1];
+		pokedex.highestStats = pokedex.pokemonss[ScriptablePokemon.BestPokemonID-1];
+	}
+
 }

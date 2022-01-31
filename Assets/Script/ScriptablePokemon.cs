@@ -13,17 +13,36 @@ public class ScriptablePokemon : ScriptableObject {
 	//	public type tipoEnum;
 	[ReadOnly,ProgressBar(0,"$MaxHP",ColorMember = "GetColor")]
 	public int Hp;
+	[ReadOnly,ProgressBar(0,"$MaxATK",ColorMember = "GetColor")]
 	public int ATK;
+	[ReadOnly,ProgressBar(0,"$MaxDEF",ColorMember = "GetColor")]
 	public int DEF;
+	[ReadOnly,ProgressBar(0,"$MaxSPD",ColorMember = "GetColor")]
 	public int SPD;
+	[ReadOnly,ProgressBar(0,"$MaxSAT",ColorMember = "GetColor")]
 	public int SAT;
+	[ReadOnly,ProgressBar(0,"$MaxSDF",ColorMember = "GetColor")]
 	public int SDF;
 	public List<ScriptablePokemon> evolutions = new List<ScriptablePokemon>();
 	[HideInInspector] public List<int> evolutionsID = new List<int>();
 
 	public static int MaxHP;
+	public static int MaxHPId;
+	public static int MaxATK;
+	public static int MaxATKId;
+	public static int MaxDEF;
+	public static int MaxDEFId;
+	public static int MaxSPD;
+	public static int MaxSPDId;
+	public static int MaxSAT;
+	public static int MaxSATId;
+	public static int MaxSDF;
+	public static int MaxSDFId;
+	public static int BestPokemon;
+	public static int BestPokemonID;
+	
 	private Color GetColor(int value) {
-		return Color.Lerp(Color.red, Color.green,Mathf.Pow(value / 100, 2));
+		return Color.Lerp(Color.red, Color.green,Mathf.Pow(value / 100f, 2));
 	}
 }
 

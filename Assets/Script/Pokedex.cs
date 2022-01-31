@@ -5,6 +5,14 @@ public class Pokedex : MonoBehaviour {
 	private XmlDocument pokedexOriginal = new XmlDocument();
 	public ScriptablePokemon[] pokemonss;
 	public XmlFix fix;
+	public ScriptablePokemon highestHP;
+	public ScriptablePokemon highestATK;
+	public ScriptablePokemon highestDEF;
+	public ScriptablePokemon highestSPD;
+	public ScriptablePokemon highestSAT;
+	public ScriptablePokemon highestSDF;
+	public ScriptablePokemon highestStats;
+	
 
 	private void Start() {
 		fix.xmlFixed = () => {
@@ -31,7 +39,7 @@ public class Pokedex : MonoBehaviour {
 	}
 
   public void  ButtonCreation() {
-		fix.OdinButton += () => {
+		fix.odinButton += () => {
 			fix.xmlFixed = () => {
 				pokedexOriginal.Load(Application.dataPath + "/Xml/pokedata.xml");
 				pokemonss = new ScriptablePokemon[pokedexOriginal.SelectNodes("//pokemon").Count];
