@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 301_DELCATTY
+  m_EditorClassIdentifier: 
+  id: 301
+  name: DELCATTY
+  Hp: 70
+  ATK: 65
+  SAT: 55
+  DEF: 65
+  SPD: 70
+  SDF: 55
+  sprite: {fileID: -6661108015666140432, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It is highly popular among female Trainers for its sublime fur. It
+    does not keep a nest.
+  types:
+  - Normal
+  evolutions: []
+  evolutionsID: 

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 105_MAROWAK
+  m_EditorClassIdentifier: 
+  id: 105
+  name: MAROWAK
+  Hp: 60
+  ATK: 80
+  SAT: 50
+  DEF: 110
+  SPD: 45
+  SDF: 80
+  sprite: {fileID: 3270088212292064963, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: From its birth, this savage Pokemon constantly holds bones. It is
+    skilled in using them as weapons.
+  types:
+  - Ground
+  evolutions: []
+  evolutionsID: 

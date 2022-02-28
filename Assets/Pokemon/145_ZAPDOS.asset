@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 145_ZAPDOS
+  m_EditorClassIdentifier: 
+  id: 145
+  name: ZAPDOS
+  Hp: 90
+  ATK: 90
+  SAT: 125
+  DEF: 85
+  SPD: 100
+  SDF: 90
+  sprite: {fileID: -1696030794691760483, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: A legendary Pokemon that is said to live in thunderclouds. It freely
+    controls lightning bolts.
+  types:
+  - Electric
+  - Flying
+  evolutions: []
+  evolutionsID: 

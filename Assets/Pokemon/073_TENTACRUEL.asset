@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 073_TENTACRUEL
+  m_EditorClassIdentifier: 
+  id: 73
+  name: TENTACRUEL
+  Hp: 80
+  ATK: 70
+  SAT: 80
+  DEF: 65
+  SPD: 100
+  SDF: 120
+  sprite: {fileID: -3658499315379815663, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: With 80 tentacles for ensnaring victims, it prevents escape until
+    the prey is weakened by poison.
+  types:
+  - Water
+  - Poison
+  evolutions: []
+  evolutionsID: 

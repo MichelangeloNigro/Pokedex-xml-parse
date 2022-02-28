@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 427_BUNEARY
+  m_EditorClassIdentifier: 
+  id: 427
+  name: BUNEARY
+  Hp: 55
+  ATK: 66
+  SAT: 44
+  DEF: 44
+  SPD: 85
+  SDF: 56
+  sprite: {fileID: -8580748282148352646, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It slams foes by sharply uncoiling its rolled ears. It stings enough
+    to make a grown-up cry in pain.
+  types:
+  - Normal
+  evolutions: []
+  evolutionsID: 

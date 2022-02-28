@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 152_CHIKORITA
+  m_EditorClassIdentifier: 
+  id: 152
+  name: CHIKORITA
+  Hp: 45
+  ATK: 49
+  SAT: 49
+  DEF: 65
+  SPD: 45
+  SDF: 65
+  sprite: {fileID: 7359991217259499471, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It uses the leaf on its head to determine the temperature and humidity.
+    It loves to sunbathe.
+  types:
+  - Grass
+  evolutions: []
+  evolutionsID: 

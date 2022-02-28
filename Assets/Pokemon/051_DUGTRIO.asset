@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 051_DUGTRIO
+  m_EditorClassIdentifier: 
+  id: 51
+  name: DUGTRIO
+  Hp: 35
+  ATK: 80
+  SAT: 50
+  DEF: 50
+  SPD: 120
+  SDF: 70
+  sprite: {fileID: -8449324925312644436, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: Its three heads move alternately, driving it through tough soil to
+    depths of over 60 miles.
+  types:
+  - Ground
+  evolutions: []
+  evolutionsID: 

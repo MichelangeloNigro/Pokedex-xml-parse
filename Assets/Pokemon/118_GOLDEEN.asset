@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 118_GOLDEEN
+  m_EditorClassIdentifier: 
+  id: 118
+  name: GOLDEEN
+  Hp: 45
+  ATK: 67
+  SAT: 35
+  DEF: 60
+  SPD: 63
+  SDF: 50
+  sprite: {fileID: 7202209118936667737, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It swims elegantly by flittering its tail fin as if it were a dress.
+    It has the look of a queen.
+  types:
+  - Water
+  evolutions: []
+  evolutionsID: 

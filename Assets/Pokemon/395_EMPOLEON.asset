@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 395_EMPOLEON
+  m_EditorClassIdentifier: 
+  id: 395
+  name: EMPOLEON
+  Hp: 84
+  ATK: 86
+  SAT: 111
+  DEF: 88
+  SPD: 60
+  SDF: 101
+  sprite: {fileID: 3678193438648616566, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: The three horns that extend from its beak attest to its power. The
+    leader has the biggest horns.
+  types:
+  - Water
+  - Steel
+  evolutions: []
+  evolutionsID: 

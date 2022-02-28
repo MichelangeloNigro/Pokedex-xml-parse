@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 225_DELIBIRD
+  m_EditorClassIdentifier: 
+  id: 225
+  name: DELIBIRD
+  Hp: 45
+  ATK: 55
+  SAT: 65
+  DEF: 45
+  SPD: 75
+  SDF: 45
+  sprite: {fileID: 890982904918034198, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It carries food rolled up in its tail. It has the habit of sharing
+    food with people lost in mountains.
+  types:
+  - Ice
+  - Flying
+  evolutions: []
+  evolutionsID: 

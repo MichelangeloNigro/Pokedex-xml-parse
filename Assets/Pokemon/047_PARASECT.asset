@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 047_PARASECT
+  m_EditorClassIdentifier: 
+  id: 47
+  name: PARASECT
+  Hp: 60
+  ATK: 95
+  SAT: 60
+  DEF: 80
+  SPD: 30
+  SDF: 80
+  sprite: {fileID: -6340498498481828636, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: A mushroom grown larger than the host's body controls PARASECT. It
+    scatters poisonous spores.
+  types:
+  - Bug
+  - Grass
+  evolutions: []
+  evolutionsID: 

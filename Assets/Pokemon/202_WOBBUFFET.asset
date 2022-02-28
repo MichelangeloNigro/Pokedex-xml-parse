@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 202_WOBBUFFET
+  m_EditorClassIdentifier: 
+  id: 202
+  name: WOBBUFFET
+  Hp: 190
+  ATK: 33
+  SAT: 33
+  DEF: 58
+  SPD: 33
+  SDF: 58
+  sprite: {fileID: 1248814387605978425, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It desperately tries to keep its black tail hidden. It is said to
+    be proof the tail hides a secret.
+  types:
+  - Psychic
+  evolutions: []
+  evolutionsID: 

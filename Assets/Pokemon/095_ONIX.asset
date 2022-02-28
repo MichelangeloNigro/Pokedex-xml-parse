@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 095_ONIX
+  m_EditorClassIdentifier: 
+  id: 95
+  name: ONIX
+  Hp: 35
+  ATK: 45
+  SAT: 30
+  DEF: 160
+  SPD: 70
+  SDF: 45
+  sprite: {fileID: -4764526325685706054, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: When it travels underground, it causes rumbling and tremors. It can
+    move at 50 mph.
+  types:
+  - Rock
+  - Ground
+  evolutions: []
+  evolutionsID: 

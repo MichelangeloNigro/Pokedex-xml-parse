@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 182_BELLOSSOM
+  m_EditorClassIdentifier: 
+  id: 182
+  name: BELLOSSOM
+  Hp: 75
+  ATK: 80
+  SAT: 90
+  DEF: 85
+  SPD: 50
+  SDF: 100
+  sprite: {fileID: -5756316130274025571, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: When the heavy rainfall season ends, it is drawn out by warm sunlight
+    to dance in the open.
+  types:
+  - Grass
+  evolutions: []
+  evolutionsID: 

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 248_TYRANITAR
+  m_EditorClassIdentifier: 
+  id: 248
+  name: TYRANITAR
+  Hp: 100
+  ATK: 134
+  SAT: 95
+  DEF: 110
+  SPD: 61
+  SDF: 100
+  sprite: {fileID: 8778288020727431604, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: If it rampages, it knocks down mountains and buries rivers. Maps must
+    be redrawn afterward.
+  types:
+  - Rock
+  - Dark
+  evolutions: []
+  evolutionsID: 

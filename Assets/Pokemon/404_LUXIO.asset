@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 404_LUXIO
+  m_EditorClassIdentifier: 
+  id: 404
+  name: LUXIO
+  Hp: 60
+  ATK: 85
+  SAT: 60
+  DEF: 49
+  SPD: 60
+  SDF: 49
+  sprite: {fileID: 8649598677860667281, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: Its claws loose electricity with enough amperage to cause fainting.
+    They live in small groups.
+  types:
+  - Electric
+  evolutions: []
+  evolutionsID: 

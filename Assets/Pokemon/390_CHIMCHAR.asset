@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 390_CHIMCHAR
+  m_EditorClassIdentifier: 
+  id: 390
+  name: CHIMCHAR
+  Hp: 44
+  ATK: 58
+  SAT: 58
+  DEF: 44
+  SPD: 61
+  SDF: 44
+  sprite: {fileID: 344503002609376104, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It agilely scales sheer cliffs to live atop craggy mountains. Its
+    fire is put out when it sleeps.
+  types:
+  - Fire
+  evolutions: []
+  evolutionsID: 

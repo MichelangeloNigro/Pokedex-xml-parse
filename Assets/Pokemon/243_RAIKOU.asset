@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 243_RAIKOU
+  m_EditorClassIdentifier: 
+  id: 243
+  name: RAIKOU
+  Hp: 90
+  ATK: 85
+  SAT: 115
+  DEF: 75
+  SPD: 115
+  SDF: 100
+  sprite: {fileID: -5565230384675463562, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It is said to have fallen with lightning. It can fire thunderbolts
+    from the rain clouds on its back.
+  types:
+  - Electric
+  evolutions: []
+  evolutionsID: 

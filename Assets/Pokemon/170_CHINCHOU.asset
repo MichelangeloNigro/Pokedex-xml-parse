@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 170_CHINCHOU
+  m_EditorClassIdentifier: 
+  id: 170
+  name: CHINCHOU
+  Hp: 75
+  ATK: 38
+  SAT: 56
+  DEF: 38
+  SPD: 67
+  SDF: 56
+  sprite: {fileID: 8687692507190086490, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It discharges positive and negative electricity from its antenna tips
+    to shock its foes.
+  types:
+  - Water
+  - Electric
+  evolutions: []
+  evolutionsID: 

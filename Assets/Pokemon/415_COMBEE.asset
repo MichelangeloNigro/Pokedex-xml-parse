@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 415_COMBEE
+  m_EditorClassIdentifier: 
+  id: 415
+  name: COMBEE
+  Hp: 30
+  ATK: 30
+  SAT: 30
+  DEF: 42
+  SPD: 70
+  SDF: 42
+  sprite: {fileID: 948414328973369543, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: A Pokemon formed by three others. It busily carries sweet floral honey
+    to VESPIQUEN.
+  types:
+  - Bug
+  - Flying
+  evolutions: []
+  evolutionsID: 

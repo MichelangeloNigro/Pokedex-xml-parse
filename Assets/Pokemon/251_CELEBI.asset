@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 251_CELEBI
+  m_EditorClassIdentifier: 
+  id: 251
+  name: CELEBI
+  Hp: 100
+  ATK: 100
+  SAT: 100
+  DEF: 100
+  SPD: 100
+  SDF: 100
+  sprite: {fileID: 8229452511686829645, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It has the power to travel across time, but it is said to appear only
+    in peaceful times.
+  types:
+  - Psychic
+  - Grass
+  evolutions: []
+  evolutionsID: 

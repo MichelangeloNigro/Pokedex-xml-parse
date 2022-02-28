@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 467_MAGMORTAR
+  m_EditorClassIdentifier: 
+  id: 467
+  name: MAGMORTAR
+  Hp: 75
+  ATK: 95
+  SAT: 125
+  DEF: 67
+  SPD: 83
+  SDF: 95
+  sprite: {fileID: -2301263069893673318, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It blasts fireballs of over 3,600 degrees F from the ends of its arms.
+    It lives in volcanic craters.
+  types:
+  - Fire
+  evolutions: []
+  evolutionsID: 

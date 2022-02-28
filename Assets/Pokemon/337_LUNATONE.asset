@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 337_LUNATONE
+  m_EditorClassIdentifier: 
+  id: 337
+  name: LUNATONE
+  Hp: 70
+  ATK: 55
+  SAT: 95
+  DEF: 65
+  SPD: 70
+  SDF: 85
+  sprite: {fileID: 1359189207329373380, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: Because it turns active on nights of the full moon, it is said to
+    have some link to the lunar phases.
+  types:
+  - Rock
+  - Psychic
+  evolutions: []
+  evolutionsID: 

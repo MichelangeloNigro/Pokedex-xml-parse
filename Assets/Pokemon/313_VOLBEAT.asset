@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 313_VOLBEAT
+  m_EditorClassIdentifier: 
+  id: 313
+  name: VOLBEAT
+  Hp: 65
+  ATK: 73
+  SAT: 47
+  DEF: 55
+  SPD: 85
+  SDF: 75
+  sprite: {fileID: 6415076018793896295, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It communicates with others by lighting up its rear at night. It loves
+    ILLUMISE's sweet aroma.
+  types:
+  - Bug
+  evolutions: []
+  evolutionsID: 

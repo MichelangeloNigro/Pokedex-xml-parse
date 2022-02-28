@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 176_TOGETIC
+  m_EditorClassIdentifier: 
+  id: 176
+  name: TOGETIC
+  Hp: 55
+  ATK: 40
+  SAT: 80
+  DEF: 85
+  SPD: 40
+  SDF: 105
+  sprite: {fileID: 6514916786587554825, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It is said to appear in front of kindly people to scatter a glowing
+    down called "joy dust."
+  types:
+  - Normal
+  - Flying
+  evolutions: []
+  evolutionsID: 

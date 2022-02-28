@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 356_DUSCLOPS
+  m_EditorClassIdentifier: 
+  id: 356
+  name: DUSCLOPS
+  Hp: 40
+  ATK: 70
+  SAT: 60
+  DEF: 130
+  SPD: 25
+  SDF: 130
+  sprite: {fileID: -2989729571429626517, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: Its body is hollow. It is said that those who look into its body are
+    sucked into the void.
+  types:
+  - Ghost
+  evolutions: []
+  evolutionsID: 

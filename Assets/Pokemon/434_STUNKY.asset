@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 434_STUNKY
+  m_EditorClassIdentifier: 
+  id: 434
+  name: STUNKY
+  Hp: 63
+  ATK: 63
+  SAT: 41
+  DEF: 47
+  SPD: 74
+  SDF: 41
+  sprite: {fileID: -8289694503341709149, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It protects itself by spraying a noxious fluid from its rear. The
+    stench lingers for 24 hours.
+  types:
+  - Poison
+  - Dark
+  evolutions: []
+  evolutionsID: 

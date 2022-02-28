@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 031_NIDOQUEEN
+  m_EditorClassIdentifier: 
+  id: 31
+  name: NIDOQUEEN
+  Hp: 90
+  ATK: 82
+  SAT: 75
+  DEF: 87
+  SPD: 76
+  SDF: 85
+  sprite: {fileID: -6026697991187676285, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: Its entire body is armored with hard scales. It will protect the young
+    in its burrow with its life.
+  types:
+  - Poison
+  - Ground
+  evolutions: []
+  evolutionsID: 

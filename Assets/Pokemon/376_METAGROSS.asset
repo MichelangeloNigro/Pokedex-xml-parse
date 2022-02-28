@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 376_METAGROSS
+  m_EditorClassIdentifier: 
+  id: 376
+  name: METAGROSS
+  Hp: 80
+  ATK: 135
+  SAT: 95
+  DEF: 130
+  SPD: 70
+  SDF: 90
+  sprite: {fileID: -3028703085397686484, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: METANG combined to form it. With four brains, it has the intelligence
+    of a supercomputer.
+  types:
+  - Steel
+  - Psychic
+  evolutions: []
+  evolutionsID: 

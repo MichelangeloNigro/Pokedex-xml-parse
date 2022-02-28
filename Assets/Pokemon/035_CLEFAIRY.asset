@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 035_CLEFAIRY
+  m_EditorClassIdentifier: 
+  id: 35
+  name: CLEFAIRY
+  Hp: 70
+  ATK: 45
+  SAT: 60
+  DEF: 48
+  SPD: 35
+  SDF: 65
+  sprite: {fileID: 6178834354679108557, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: Thought to live with others on quiet mountains, it is popular for
+    its adorable nature.
+  types:
+  - Normal
+  evolutions: []
+  evolutionsID: 

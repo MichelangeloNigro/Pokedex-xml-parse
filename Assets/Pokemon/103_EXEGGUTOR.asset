@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 103_EXEGGUTOR
+  m_EditorClassIdentifier: 
+  id: 103
+  name: EXEGGUTOR
+  Hp: 95
+  ATK: 95
+  SAT: 125
+  DEF: 85
+  SPD: 55
+  SDF: 65
+  sprite: {fileID: -2499161316436744108, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It is called "The Walking Jungle." If a head grows too big, it falls
+    off and becomes an EXEGGCUTE.
+  types:
+  - Grass
+  - Psychic
+  evolutions: []
+  evolutionsID: 

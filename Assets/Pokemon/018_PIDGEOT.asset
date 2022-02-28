@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 018_PIDGEOT
+  m_EditorClassIdentifier: 
+  id: 18
+  name: PIDGEOT
+  Hp: 83
+  ATK: 80
+  SAT: 70
+  DEF: 75
+  SPD: 91
+  SDF: 70
+  sprite: {fileID: 450206873744039957, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: By flapping its wings with all its might, PIDGEOT can make a gust
+    of wind capable of bending tall trees.
+  types:
+  - Normal
+  - Flying
+  evolutions: []
+  evolutionsID: 

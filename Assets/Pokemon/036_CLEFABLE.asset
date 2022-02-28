@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 036_CLEFABLE
+  m_EditorClassIdentifier: 
+  id: 36
+  name: CLEFABLE
+  Hp: 95
+  ATK: 70
+  SAT: 85
+  DEF: 73
+  SPD: 60
+  SDF: 90
+  sprite: {fileID: 744702627279396130, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: Rarely seen by people, it is said to be drawn by the full moon to
+    play at deserted lakes.
+  types:
+  - Normal
+  evolutions: []
+  evolutionsID: 

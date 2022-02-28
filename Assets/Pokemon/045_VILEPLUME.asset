@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 045_VILEPLUME
+  m_EditorClassIdentifier: 
+  id: 45
+  name: VILEPLUME
+  Hp: 75
+  ATK: 80
+  SAT: 100
+  DEF: 85
+  SPD: 50
+  SDF: 90
+  sprite: {fileID: -2574737170130585332, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: Its petals are the largest in the world. As it walks, it scatters
+    extremely allergenic pollen.
+  types:
+  - Grass
+  - Poison
+  evolutions: []
+  evolutionsID: 

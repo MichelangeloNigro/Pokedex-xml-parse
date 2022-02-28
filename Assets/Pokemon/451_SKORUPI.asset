@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 451_SKORUPI
+  m_EditorClassIdentifier: 
+  id: 451
+  name: SKORUPI
+  Hp: 40
+  ATK: 50
+  SAT: 30
+  DEF: 90
+  SPD: 65
+  SDF: 55
+  sprite: {fileID: 8915931728186943877, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It grips prey with its tail claws and injects poison. It tenaciously
+    hangs on until the poison takes.
+  types:
+  - Poison
+  - Bug
+  evolutions: []
+  evolutionsID: 

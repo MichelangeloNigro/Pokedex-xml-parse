@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 109_KOFFING
+  m_EditorClassIdentifier: 
+  id: 109
+  name: KOFFING
+  Hp: 40
+  ATK: 65
+  SAT: 60
+  DEF: 95
+  SPD: 35
+  SDF: 45
+  sprite: {fileID: -1535280467618158180, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: Lighter-than-air gases in its body keep it aloft. The gases not only
+    smell, they are also explosive.
+  types:
+  - Poison
+  evolutions: []
+  evolutionsID: 

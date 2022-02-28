@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 246_LARVITAR
+  m_EditorClassIdentifier: 
+  id: 246
+  name: LARVITAR
+  Hp: 50
+  ATK: 64
+  SAT: 45
+  DEF: 50
+  SPD: 41
+  SDF: 50
+  sprite: {fileID: 6290726031168481999, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: A Pokemon that eats soil. Once it has eaten a large mountain, it goes
+    to sleep so it can grow.
+  types:
+  - Rock
+  - Ground
+  evolutions: []
+  evolutionsID: 

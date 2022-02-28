@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 440_HAPPINY
+  m_EditorClassIdentifier: 
+  id: 440
+  name: HAPPINY
+  Hp: 100
+  ATK: 5
+  SAT: 15
+  DEF: 5
+  SPD: 30
+  SDF: 65
+  sprite: {fileID: -14472720833977794, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It loves round white things. It carries an egg-shaped rock in imitation
+    of CHANSEY.
+  types:
+  - Normal
+  evolutions: []
+  evolutionsID: 

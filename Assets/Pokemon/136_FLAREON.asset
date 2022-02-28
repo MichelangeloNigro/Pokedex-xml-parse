@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 136_FLAREON
+  m_EditorClassIdentifier: 
+  id: 136
+  name: FLAREON
+  Hp: 65
+  ATK: 130
+  SAT: 95
+  DEF: 60
+  SPD: 65
+  SDF: 110
+  sprite: {fileID: 2819391151212899442, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It has a flame sac in its body. Its body temperature tops 1,650 degrees
+    Fahrenheit before battle.
+  types:
+  - Fire
+  evolutions: []
+  evolutionsID: 

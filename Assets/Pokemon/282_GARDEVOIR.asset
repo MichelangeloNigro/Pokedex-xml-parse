@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 282_GARDEVOIR
+  m_EditorClassIdentifier: 
+  id: 282
+  name: GARDEVOIR
+  Hp: 68
+  ATK: 65
+  SAT: 125
+  DEF: 65
+  SPD: 80
+  SDF: 115
+  sprite: {fileID: -5253135014226564577, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: It will try to guard its trusted Trainer with its life. It has the
+    ability to see the future.
+  types:
+  - Psychic
+  evolutions: []
+  evolutionsID: 

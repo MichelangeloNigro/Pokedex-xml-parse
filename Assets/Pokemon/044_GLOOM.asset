@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb5de840647b243baba54d0256d53c, type: 3}
+  m_Name: 044_GLOOM
+  m_EditorClassIdentifier: 
+  id: 44
+  name: GLOOM
+  Hp: 60
+  ATK: 65
+  SAT: 85
+  DEF: 70
+  SPD: 40
+  SDF: 75
+  sprite: {fileID: 6958117348975608571, guid: c062ee8e72cd46b43b69e8d660897aa2, type: 3}
+  description: The honey it drools from its mouth smells so atrocious, it can curl
+    noses more than a mile away.
+  types:
+  - Grass
+  - Poison
+  evolutions: []
+  evolutionsID: 
