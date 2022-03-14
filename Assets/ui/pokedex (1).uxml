@@ -1,0 +1,60 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="screen" style="flex-grow: 1; margin-left: 38px; margin-right: 38px; margin-top: 38px; margin-bottom: 38px; border-top-left-radius: 54px; border-bottom-left-radius: 54px; border-top-right-radius: 54px; border-bottom-right-radius: 54px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; background-color: rgb(42, 140, 229);">
+        <ui:VisualElement name="white-box" style="position: absolute; left: 0; right: 0; bottom: 0; height: 687px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 44px; border-bottom-left-radius: 44px; border-top-right-radius: 44px; border-bottom-right-radius: 44px; background-color: rgb(255, 255, 255);" />
+        <ui:VisualElement name="info" style="height: 586px; flex-direction: column-reverse; align-items: stretch;">
+            <ui:Label text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia." display-tooltip-when-elided="true" enable-rich-text="true" style="height: 96px; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px; color: rgba(0, 0, 0, 255); -unity-font-style: bold; white-space: normal; font-size: 16px;" />
+            <ui:VisualElement name="types" style="height: 56px;" />
+            <ui:VisualElement name="name" style="height: 65px;">
+                <ui:Label text="Pokemon" display-tooltip-when-elided="true" name="label" style="flex-grow: 1; -unity-text-align: middle-center; font-size: 49px; color: rgba(0, 0, 0, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="header" style="align-items: center; width: auto; height: auto; flex-grow: 1; flex-direction: column-reverse;">
+                <ui:VisualElement name="sprite" style="width: 250px; height: 250px; background-color: rgba(0, 0, 0, 0.38);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="tab" style="height: 88px;" />
+        <ui:VisualElement name="info2" style="flex-grow: 1; margin-left: 34px; margin-right: 34px; margin-top: 8px; margin-bottom: 34px;">
+            <ui:VisualElement name="stat" style="height: 28px; flex-direction: row;">
+                <ui:Label text="HP" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 100, 190); -unity-font-style: bold; font-size: 15px; width: 43px;" />
+                <ui:Label text="000" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 0, 0); -unity-font-style: bold; font-size: 17px;" />
+                <ui:VisualElement name="bar-background" style="flex-grow: 1; margin-left: 5px; margin-right: 5px; margin-top: 7px; margin-bottom: 7px; -unity-background-image-tint-color: rgba(0, 0, 0, 255); background-color: rgb(128, 128, 128); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                    <ui:VisualElement name="value" style="flex-grow: 1; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-left-color: rgba(0, 100, 190, 0); border-right-color: rgba(0, 100, 190, 0); border-top-color: rgba(0, 100, 190, 0); border-bottom-color: rgba(0, 100, 190, 0); background-color: rgb(0, 100, 190); width: 12%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="stat" style="height: 28px; flex-direction: row;">
+                <ui:Label text="ATK" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 100, 190); -unity-font-style: bold; font-size: 15px; width: 43px;" />
+                <ui:Label text="000" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 0, 0); -unity-font-style: bold; font-size: 17px;" />
+                <ui:VisualElement name="bar-background" style="flex-grow: 1; margin-left: 5px; margin-right: 5px; margin-top: 7px; margin-bottom: 7px; -unity-background-image-tint-color: rgb(0, 0, 0); background-color: rgb(128, 128, 128); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                    <ui:VisualElement name="value" style="flex-grow: 1; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-left-color: rgba(0, 100, 190, 0); border-right-color: rgba(0, 100, 190, 0); border-top-color: rgba(0, 100, 190, 0); border-bottom-color: rgba(0, 100, 190, 0); background-color: rgb(0, 100, 190); width: 12%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="stat" style="height: 28px; flex-direction: row;">
+                <ui:Label text="DEF" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 100, 190); -unity-font-style: bold; font-size: 15px; width: 43px;" />
+                <ui:Label text="000" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 0, 0); -unity-font-style: bold; font-size: 17px;" />
+                <ui:VisualElement name="bar-background" style="flex-grow: 1; margin-left: 5px; margin-right: 5px; margin-top: 7px; margin-bottom: 7px; -unity-background-image-tint-color: rgb(0, 0, 0); background-color: rgb(128, 128, 128); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                    <ui:VisualElement name="value" style="flex-grow: 1; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-left-color: rgba(0, 100, 190, 0); border-right-color: rgba(0, 100, 190, 0); border-top-color: rgba(0, 100, 190, 0); border-bottom-color: rgba(0, 100, 190, 0); background-color: rgb(0, 100, 190); width: 12%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="stat" style="height: 28px; flex-direction: row;">
+                <ui:Label text="SATK" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 100, 190); -unity-font-style: bold; font-size: 15px; width: 43px;" />
+                <ui:Label text="000" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 0, 0); -unity-font-style: bold; font-size: 17px;" />
+                <ui:VisualElement name="bar-background" style="flex-grow: 1; margin-left: 5px; margin-right: 5px; margin-top: 7px; margin-bottom: 7px; -unity-background-image-tint-color: rgb(0, 0, 0); background-color: rgb(128, 128, 128); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                    <ui:VisualElement name="value" style="flex-grow: 1; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-left-color: rgba(0, 100, 190, 0); border-right-color: rgba(0, 100, 190, 0); border-top-color: rgba(0, 100, 190, 0); border-bottom-color: rgba(0, 100, 190, 0); background-color: rgb(0, 100, 190); width: 12%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="stat" style="height: 28px; flex-direction: row;">
+                <ui:Label text="SDEF" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 100, 190); -unity-font-style: bold; font-size: 15px; width: 43px;" />
+                <ui:Label text="000" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 0, 0); -unity-font-style: bold; font-size: 17px;" />
+                <ui:VisualElement name="bar-background" style="flex-grow: 1; margin-left: 5px; margin-right: 5px; margin-top: 7px; margin-bottom: 7px; -unity-background-image-tint-color: rgb(0, 0, 0); background-color: rgb(128, 128, 128); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                    <ui:VisualElement name="value" style="flex-grow: 1; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-left-color: rgba(0, 100, 190, 0); border-right-color: rgba(0, 100, 190, 0); border-top-color: rgba(0, 100, 190, 0); border-bottom-color: rgba(0, 100, 190, 0); background-color: rgb(0, 100, 190); width: 12%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="stat" style="height: 28px; flex-direction: row;">
+                <ui:Label text="SPD" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 100, 190); -unity-font-style: bold; font-size: 15px; width: 43px;" />
+                <ui:Label text="000" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; color: rgb(0, 0, 0); -unity-font-style: bold; font-size: 17px;" />
+                <ui:VisualElement name="bar-background" style="flex-grow: 1; margin-left: 5px; margin-right: 5px; margin-top: 7px; margin-bottom: 7px; -unity-background-image-tint-color: rgb(0, 0, 0); background-color: rgb(128, 128, 128); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                    <ui:VisualElement name="value" style="flex-grow: 1; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-left-color: rgba(0, 100, 190, 0); border-right-color: rgba(0, 100, 190, 0); border-top-color: rgba(0, 100, 190, 0); border-bottom-color: rgba(0, 100, 190, 0); background-color: rgb(0, 100, 190); width: 12%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

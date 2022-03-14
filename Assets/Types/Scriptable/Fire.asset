@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2fd3027b2d43e4cb87e93230171897, type: 3}
+  m_Name: Fire
+  m_EditorClassIdentifier: 
+  name: 
+  color: {r: 0.9843138, g: 0.47058827, b: 0.32156864, a: 1}
+  sprite: {fileID: 21300000, guid: a48e1bb0fef88e44ba63a70b91ad40b2, type: 3}
+  weakAgainst: []
+  strongAgainst: []
+  normalEffectivness: []
+  notEffective: []

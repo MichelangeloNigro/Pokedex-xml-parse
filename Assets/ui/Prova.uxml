@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; margin-left: 35px; margin-right: 35px; margin-top: 35px; margin-bottom: 35px;">
+        <ui:VisualElement name="Info" style="height: 499px; flex-direction: column-reverse;">
+            <ui:VisualElement name="Description" style="height: 413px; flex-direction: column-reverse;" />
+            <ui:VisualElement name="Type" style="height: 319px; flex-direction: column-reverse;" />
+            <ui:VisualElement name="Name" style="height: 538px; flex-direction: column-reverse; align-items: stretch;" />
+            <ui:VisualElement name="Sprite" style="height: 1224px; flex-direction: column-reverse;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Stats" style="height: 93px;" />
+        <ui:VisualElement name="Info1" style="flex-grow: 1; height: 166px;" />
+    </ui:VisualElement>
+</ui:UXML>
