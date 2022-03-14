@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2fd3027b2d43e4cb87e93230171897, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: 
-  name: 
+  name: Water
   color: {r: 0.30980393, g: 0.7843138, b: 0.8588236, a: 1}
   sprite: {fileID: 21300000, guid: 262b899e1b343fe4d8d73ae7ef0e640e, type: 3}
   weakAgainst: []

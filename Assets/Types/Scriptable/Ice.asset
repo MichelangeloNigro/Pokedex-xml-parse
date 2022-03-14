@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2fd3027b2d43e4cb87e93230171897, type: 3}
   m_Name: Ice
   m_EditorClassIdentifier: 
-  name: 
+  name: Ice
   color: {r: 0.427451, g: 0.86666673, b: 0.8235295, a: 1}
   sprite: {fileID: 21300000, guid: 8e1a3d6c631bb6d44b1a9f2fe12f3ce5, type: 3}
   weakAgainst: []

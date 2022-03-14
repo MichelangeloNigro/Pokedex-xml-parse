@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2fd3027b2d43e4cb87e93230171897, type: 3}
   m_Name: Dragon
   m_EditorClassIdentifier: 
-  name: 
+  name: Dragon
   color: {r: 0.3372549, g: 0.3921569, b: 0.6627451, a: 1}
   sprite: {fileID: 21300000, guid: 8ac7ca4fe04e60d47bdfea1ea3661bdb, type: 3}
   weakAgainst: []

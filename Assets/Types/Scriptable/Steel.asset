@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2fd3027b2d43e4cb87e93230171897, type: 3}
   m_Name: Steel
   m_EditorClassIdentifier: 
-  name: 
+  name: Steel
   color: {r: 0.54901963, g: 0.7058824, b: 0.74509805, a: 1}
   sprite: {fileID: 21300000, guid: 10f011eec65169743801ddc0843a0830, type: 3}
   weakAgainst: []

@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2fd3027b2d43e4cb87e93230171897, type: 3}
   m_Name: Poison
   m_EditorClassIdentifier: 
-  name: 
+  name: Poison
   color: {r: 0.70980394, g: 0.39607847, b: 0.64705884, a: 1}
   sprite: {fileID: 21300000, guid: d0e1495c672dd6b4f89b0cd704cf2c84, type: 3}
-  weakAgainst: []
+  weakAgainst:
+  - {fileID: 11400000}
   strongAgainst: []
-  normalEffectivness: []
+  normalEffectivness:
+  - {fileID: 11400000, guid: ac10413dd368a954886a1d758f78c089, type: 2}
   notEffective: []
