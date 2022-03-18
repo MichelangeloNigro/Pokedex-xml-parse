@@ -1499,7 +1499,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -1557,6 +1557,42 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -12058,8 +12094,8 @@ TextureImporter:
       pokedex_166: -6975223845042654202
       pokedex_251: 455265392288050233
       pokedex_94: -4764526325685706054
-      pokedex_151: 7359991217259499471
       pokedex_292: 1252548888169375145
+      pokedex_151: 7359991217259499471
       pokedex_478: 84614949519431102
       pokedex_427: 3263839337579402112
       pokedex_400: -8088108808456188010
@@ -12080,9 +12116,9 @@ TextureImporter:
       pokedex_290: -4138937106791502478
       pokedex_410: -1688318440189416145
       pokedex_187: -3596186905716791616
-      pokedex_385: -6609286850525576992
       pokedex_418: -3244328096881187563
       pokedex_196: 6904880678832265606
+      pokedex_385: -6609286850525576992
       pokedex_169: 8687692507190086490
       pokedex_221: -3611575061422841211
       pokedex_156: 4527824020974989020
@@ -12193,10 +12229,10 @@ TextureImporter:
       pokedex_163: 3438594703010772849
       pokedex_168: 5032081911740804772
       pokedex_162: 3191339389047535618
-      pokedex_172: 153912460189363594
-      pokedex_408: -7752226093126495553
-      pokedex_482: -1056448064905284113
       pokedex_304: 8373149311596915557
+      pokedex_172: 153912460189363594
+      pokedex_482: -1056448064905284113
+      pokedex_408: -7752226093126495553
       pokedex_103: 1670529762679647480
       pokedex_368: -5708325875171636856
       pokedex_132: 738877593986463288
@@ -12215,10 +12251,10 @@ TextureImporter:
       pokedex_394: 3678193438648616566
       pokedex_43: 6958117348975608571
       pokedex_429: 1237175789272030550
-      pokedex_413: 991503450183854605
       pokedex_480: 818285893051916535
       pokedex_146: 2529390752734318687
       pokedex_387: 2896639773492904288
+      pokedex_413: 991503450183854605
       pokedex_15: 6850542586520004465
       pokedex_191: -5354517274348563872
       pokedex_305: 3295630369504915664
@@ -12236,9 +12272,9 @@ TextureImporter:
       pokedex_300: -6661108015666140432
       pokedex_316: -2009845734941975704
       pokedex_137: 1773729541695099031
-      pokedex_334: -2435769728017756680
-      pokedex_346: -1561104304800803854
       pokedex_431: -4012930270616971002
+      pokedex_346: -1561104304800803854
+      pokedex_334: -2435769728017756680
       pokedex_295: 1025993265890244379
       pokedex_256: -5466700681740306259
       pokedex_73: 6524442259749857628
@@ -12253,11 +12289,11 @@ TextureImporter:
       pokedex_205: -3221127477145605645
       pokedex_195: -2313451912415837189
       pokedex_337: -4684217402767424168
-      pokedex_407: 3923685592859340301
+      pokedex_473: 4244780543796015641
       pokedex_326: 6040792932457474514
       pokedex_296: -8625867397627936157
-      pokedex_473: 4244780543796015641
       pokedex_358: -1387936839393316234
+      pokedex_407: 3923685592859340301
       pokedex_242: -5565230384675463562
       pokedex_185: 1576538132509544138
       pokedex_228: 418678308164736214
@@ -12265,22 +12301,22 @@ TextureImporter:
       pokedex_66: -1894276162104534345
       pokedex_177: -180045769754920256
       pokedex_99: 904242997840146166
-      pokedex_8: 757608379740857362
-      pokedex_263: -7168766059506486495
       pokedex_238: 2527014479018788583
-      pokedex_333: -4860282431849140947
-      pokedex_285: -2541471995667573551
+      pokedex_8: 757608379740857362
       pokedex_323: -1293073609670718612
+      pokedex_263: -7168766059506486495
+      pokedex_285: -2541471995667573551
       pokedex_428: 3745542904272374928
+      pokedex_333: -4860282431849140947
       pokedex_215: 4142042048476503967
       pokedex_447: -1049444080426446782
       pokedex_436: 422779405750577302
       pokedex_14: 2144409729266437953
       pokedex_416: 5587304879286318358
       pokedex_380: -3720926260668786369
-      pokedex_332: -3706508950517932333
-      pokedex_27: -7189906734528386653
       pokedex_389: 344503002609376104
+      pokedex_27: -7189906734528386653
+      pokedex_332: -3706508950517932333
       pokedex_414: 948414328973369543
       pokedex_412: 556814929122801571
       pokedex_125: -4428756384509460111
